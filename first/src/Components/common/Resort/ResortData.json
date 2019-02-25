@@ -1,0 +1,30 @@
+[
+  {
+    "name": "otdykh leisure",
+    "description": "20th International trade fair for travel & tourism",
+    "link": "#",
+    "src": "resortImage_1.jpg",
+    "color": "#f39323"
+  },
+  {
+    "name": "otdykh mice",
+    "description": "10th International meetings industry and business travel exhibition & conference",
+    "link": "#",
+    "src": "resortImage_3.jpg",
+    "color": "#02aef0"
+  },
+  {
+    "name": "otdykh luxury",
+    "description": "9th International trade fair for luxury travel",
+    "link": "#",
+    "src": "resortImage_2.jpg",
+    "color": "#90278e"
+  },
+  {
+    "name": "otdykh spa & health",
+    "description": "Pealthy prospects for your Business: OTDYKH SPA & HEALTH is dedicated to one of the fastest growing segment of the Russian Travel industry",
+    "link": "#",
+    "src": "resortImage_4.jpg",
+    "color": "#9cbb43"
+  }
+]

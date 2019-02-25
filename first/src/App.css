@@ -14,8 +14,13 @@
   margin: 0 auto;
 }
 
+.Page-Main {
+  margin-top: 53px;
+}
+
 .Footer-Wrapper {
   background-color: #1d2124;
+  margin-top: 25px;
 }
 
 .Page-Footer {
