@@ -3,3 +3,13 @@
   font-weight: 400;
   background-color: #fff;
 }
+
+.Page-Container {
+  width: 100vw;
+  background-color: #fafafa;
+}
+
+.Page-Menu {
+  max-width: 1180px;
+  margin: 0 auto;
+}

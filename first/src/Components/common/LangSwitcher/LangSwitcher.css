@@ -15,6 +15,11 @@
   line-height: 15px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+
+.LangSwitcher-Item:hover {
+  opacity: 0.75;
 }
 
 .LangSwitcher-Item_active {
