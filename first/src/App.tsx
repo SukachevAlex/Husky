@@ -5,6 +5,7 @@ import './App.css';
 import './fonts/fonts.css';
 import { Header } from './Components/common/Header/Header';
 import { Menu } from './Components/common/Menu/Menu';
+import { Slider } from './Components/common/Slider/Slider';
 
 const cnPage = cn('Page');
 
@@ -16,6 +17,7 @@ class App extends Component {
         <div className={cnPage('Container')}>
           <Menu className={cnPage('Menu')} />
         </div>
+        <Slider className={cnPage('Slider')}/>
       </div>
     );
   }

@@ -7,6 +7,7 @@
 .Page-Container {
   width: 100vw;
   background-color: #fafafa;
+  margin-top: 8px;
 }
 
 .Page-Menu {
