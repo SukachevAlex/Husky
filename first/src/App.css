@@ -4,13 +4,21 @@
   background-color: #fff;
 }
 
-.Page-Container {
-  width: 100vw;
+.Menu-Wrapper {
   background-color: #fafafa;
   margin-top: 8px;
 }
 
 .Page-Menu {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.Footer-Wrapper {
+  background-color: #1d2124;
+}
+
+.Page-Footer {
   max-width: 1180px;
   margin: 0 auto;
 }
