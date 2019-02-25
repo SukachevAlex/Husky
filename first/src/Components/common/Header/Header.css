@@ -1,0 +1,29 @@
+.Header-Container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Header-Left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Header-Right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.Header-Info {
+  margin-left: 15px;
+}
+
+.Header-LangSwitcher {
+  margin-top: 29px;
+}

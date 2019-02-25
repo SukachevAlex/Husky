@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import './fonts/fonts.css';
+import { Header } from './Components/common/Header/Header';
 
 const cnPage = cn('Page');
 
@@ -10,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className={cnPage()}>
-      123
+        <Header />
       </div>
     );
   }

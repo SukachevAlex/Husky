@@ -1,0 +1,17 @@
+.Info-Date {
+  color: #2a2a2a;
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1.84px;
+}
+
+.Info-Address {
+  color: #2a2a2a;
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.70px;
+}

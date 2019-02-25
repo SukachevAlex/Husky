@@ -1,0 +1,22 @@
+.LangSwitcher {
+  display: flex;
+}
+
+.LangSwitcher-Separator {
+  margin: 0 12px;
+  width: 2px;
+  height: 14px;
+  background-color: #b4b4b4;
+}
+
+.LangSwitcher-Item {
+  color: #b4b4b4;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.LangSwitcher-Item_active {
+  color: #343239;
+}

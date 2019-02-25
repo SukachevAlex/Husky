@@ -1,0 +1,27 @@
+[
+  {
+    "type": "twitter",
+    "link": "https://twitter.com/",
+    "title": "Link to twitter"
+  },
+  {
+    "type": "facebook",
+    "link": "https://facebook.com",
+    "title": "Link to facebook"
+  },
+  {
+    "type": "unknown",
+    "link": "https://unknown.com",
+    "title": "Link to unknown"
+  },
+  {
+    "type": "google",
+    "link": "https://plus.google.com/",
+    "title": "Link to google+"
+  },
+  {
+    "type": "youtube",
+    "link": "https://youtube.com/",
+    "title": "Link to youtube"
+  }
+]
