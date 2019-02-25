@@ -1,0 +1,41 @@
+/* Glober Thin */
+@font-face {
+  font-family: 'Glober';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./GloberThin.eot'); /* IE9 Compat Modes */
+  src: local('Glober Thin'), local('Glober-Thin'),
+       url('./GloberThin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./GloberThin.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./GloberThin.woff') format('woff'), /* Modern Browsers */
+       url('./GloberThin.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./GloberThin.svg#Glober') format('svg'); /* Legacy iOS */
+}
+
+/* Glober Regular */
+@font-face {
+  font-family: 'Glober';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./GloberRegular.eot'); /* IE9 Compat Modes */
+  src: local('Glober'), local('Glober-Regular'),
+       url('./GloberRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./GloberRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./GloberRegular.woff') format('woff'), /* Modern Browsers */
+       url('./GloberRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./GloberRegular.svg#Glober') format('svg'); /* Legacy iOS */
+}
+
+/* Glober Bold */
+@font-face {
+  font-family: 'Glober';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./GloberBold.eot'); /* IE9 Compat Modes */
+  src: local('Glober Bold'), local('Glober-Bold'),
+       url('./GloberBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./GloberBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./GloberBold.woff') format('woff'), /* Modern Browsers */
+       url('./GloberBold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./GloberBold.svg#Glober') format('svg'); /* Legacy iOS */
+}
