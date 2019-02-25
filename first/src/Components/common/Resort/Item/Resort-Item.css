@@ -4,7 +4,6 @@
   margin-bottom: 58px;
 }
 
-
 .Resort-Header {
   display: flex;
   align-items: center;
@@ -17,6 +16,7 @@
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .Resort-Name:nth-of-type(1) {
@@ -42,7 +42,7 @@
 
 .Resort-Link {
   margin-top: 21px;
-  display: inline-block;
+  display: block;
   color: #2a2a2a;
   font-size: 16px;
   font-weight: 700;
@@ -53,4 +53,40 @@
 
 .Resort-Link:hover {
   opacity: 0.75;
+}
+
+@media screen and (max-width: 1150px) {
+  .Resort-Item {
+    width: 95%;
+    max-width: none;
+    margin: 0 auto 58px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .Resort-Header {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Resort-Image {
+    width: 100%;
+  }
+
+  .Resort-Item {
+    width: 100%;
+  }
+
+  .Resort-Link {
+    text-align: center;
+  }
+
+  .Resort-Description {
+    padding: 0 15px;
+    text-align: justify;
+  }
+
+  .Resort-Name {
+    text-align: center;
+  }
 }

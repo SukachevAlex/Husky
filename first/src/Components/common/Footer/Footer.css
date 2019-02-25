@@ -11,3 +11,14 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+  .Footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Footer-CompanyName {
+    margin: 20px 0 0;
+  }
+}

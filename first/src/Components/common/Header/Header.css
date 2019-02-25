@@ -27,3 +27,31 @@
 .Header-LangSwitcher {
   margin-top: 29px;
 }
+
+@media screen and (max-width: 980px) {
+  .Header-Right {
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .Header-Left {
+    width: 95%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .Header-Left {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  .Header-Right {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

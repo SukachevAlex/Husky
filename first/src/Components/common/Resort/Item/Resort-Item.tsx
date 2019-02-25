@@ -18,7 +18,7 @@ export const ResortItem: React.SFC<IResortItemProps> = ({name, description, link
   <div className={cnResort('Item')}>
     <div className={cnResort('Header')}>
       <div className={cnResort('Name')} style={{backgroundColor: color}}>{name}</div>
-      <img src={`img/resorts/${src}`} alt={name}/>
+      <img className={cnResort('Image')} src={`img/resorts/${src}`} alt={name}/>
     </div>
 
     <div className={cnResort('Description')}>{description}</div>

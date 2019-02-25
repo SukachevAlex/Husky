@@ -24,3 +24,13 @@
   right: 80px;
   transform: translateY(-50%) rotate(180deg)
 }
+
+@media screen and (max-width: 800px) {
+  .Slider-Arrow_type_left {
+    left: 35px;
+  }
+
+  .Slider-Arrow_type_right {
+    right: 35px;
+  }
+}

@@ -1,3 +1,9 @@
 .Social {
   display: flex;
 }
+
+@media screen and (max-width: 420px) {
+  .Social {
+    width: 65%;
+  }
+}

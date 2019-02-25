@@ -30,3 +30,15 @@
 .Menu-Item:nth-of-type(4) {
   background-color: #9cbb43;
 }
+
+@media screen and (max-width: 1150px) {
+  .Menu-Item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .Menu-Item {
+    width: 100%;
+  }
+}

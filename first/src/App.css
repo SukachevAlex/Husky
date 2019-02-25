@@ -27,3 +27,15 @@
   max-width: 1180px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 980px) {
+  .Menu-Wrapper {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .Footer-Wrapper {
+    margin-top: 0;
+  }
+}
