@@ -5,6 +5,33 @@ window.requestAnimFrame = (function(){
 		};
 })();
 
+checkScrollSpeed = (function() {
+
+  const delay = 50;
+  let lastPos;
+  let newPos
+  let timer
+  let delta;
+
+  function clear() {
+    lastPos = null;
+    delta = 0;
+  }
+
+  clear();
+
+  return function() {
+    newPos = window.scrollY;
+    if ( lastPos !== null ){
+      delta = newPos -  lastPos;
+    }
+    lastPos = newPos;
+    clearTimeout(timer);
+    timer = setTimeout(clear, delay);
+    return delta;
+  };
+})();
+
 function initCherrys() {
   for (let i = 0; i < cherryCount; i++) {
     const posX = Math.floor(Math.random() * canvas.width);
@@ -18,7 +45,7 @@ function initCherrys() {
 }
 
 
-function Cherry(settings, context) {
+function Cherry(settings) {
   this.number = settings.number;
   this.posX = settings.posX || 0;
   this.posY = settings.posY || 0;
@@ -47,6 +74,7 @@ function Canvas() {
     this.context = canvas.getContext('2d');
     this.cherryMaxSpeed = 5;
     this.cherrys = [];
+    this.scrollSpeed = 1;
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -56,6 +84,10 @@ function Canvas() {
     window.onresize = function() {
       this.canvas.width = window.innerWidth;
       this.canvas.height = window.innerHeight;
+    }
+
+    window.onscroll = function(event) {
+      move(Math.abs(checkScrollSpeed()));
     }
   }
 
@@ -74,21 +106,23 @@ function Canvas() {
     for (let i = 0; i < cherrys.length; i++) {
       cherrys[i].draw(this.context);
     }
-    move();
+
   }
 
-  function move() {
+  function move(velocity) {
     for (let i = 0; i < cherrys.length; i++) {
-      if (cherrys[i].posY >= window.innerHeight - cherrys[i].height) {
+      const item = cherrys[i];
+      if (item.posY >= window.innerHeight - item.height) {
         continue;
       }
-      cherrys[i].setPosition(undefined, (cherrys[i].posY + 5));
+      cherrys[i].setPosition(undefined, (item.posY + (velocity / 10 || item.velocity)));
     }
   }
 
-  function animloop(){
+  function animloop() {
     requestAnimFrame(animloop);
     update();
+    move(0);
   }
 
   function clear() {
@@ -101,9 +135,8 @@ function Canvas() {
 
   setInterval(() => {
     initCherrys();
-  }, 5000);
+  }, 115000);
 }
-
 
 window.onload = function() {
   Canvas();
